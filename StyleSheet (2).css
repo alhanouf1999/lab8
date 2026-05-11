@@ -1,0 +1,144 @@
+
+.navbar {
+    display: flex;           /* Enables the flexbox layout */
+    align-items: center;     /* Centers everything vertically in the bar */
+    background: rgb(97, 120, 145);
+    padding: 0 40px;         /* Adds space on the far left and right edges */
+    height: 80px;            /* Set a consistent height */
+}
+
+/* Remove 'float: left' from your links to avoid layout bugs */
+.navbar a {
+    text-decoration: none;
+    padding: 10px 15px;
+    /* Remove float: left; if it's still there */
+}
+
+.magazine-name {
+    margin-left: auto;       /* This is the "magic" line that pushes it to the right */
+    font-family: 'serif';
+    font-weight: bold;
+    font-size: 20px;
+    color: #b0b4b9;          /* Matches your 'About Us' text color */
+    text-transform: uppercase;
+}
+ .navbar a:hover{
+Color: rgb(44, 77, 112);
+Background-color : rgb(71, 96, 124);
+}
+ body {
+margin: 0;
+font-family: Arial, sans-serif;
+background: rgb(37, 52, 79);
+overflow-x: hidden;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+}
+
+.about-hero {
+    display: flex;
+    height: 100vh;      /* This locks the section to the height of the screen */
+    overflow: hidden;   /* This prevents anything from leaking out */
+    align-items: stretch; /* Makes both sides the same height */
+}
+.short-line {
+    width: 50px;
+    border: 1px solid #b0b4b9;
+    margin-left: 0;
+}
+
+.hero-right {
+    flex: 1;
+    height: 100%;       /* Keeps the container strictly as tall as the hero section */
+}
+
+.hero-right img {
+    width: 100%;
+    height: 100%;       /* Fills the container height */
+    /* Ensures the best part of the photo is visible */
+}
+.hero-left {
+    flex: 1;
+    padding: 10% 8%;           /* This adds space around the text */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* This moves everything to the TOP */
+    padding-top: 80px;        /* Adjust this number to move it up or down more */
+    background-color: #1a2533;
+}
+
+.team-buttons {
+    display: flex;
+    flex-wrap: wrap;   /* Allows names to wrap to the next line if they are long */
+    gap: 15px;
+    margin-top: 30px;
+}
+.read-more {
+    display: inline-block;
+    padding: 12px 24px;       /* Adds space inside the box */
+    border: 1px solid #b0b4b9;  /* Creates the box outline */
+    color: #b0b4b9;             /* Text color */
+    text-decoration: none;    /* Removes the underline */
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: all 0.3s ease; /* Makes the hover effect smooth */
+    margin-right: 15px;       /* Space between the buttons */
+    margin-bottom: 10px;      /* Space if they wrap to a new line */
+}
+.hero-description {
+    font-family: "Montserrat", Arial, sans-serif;
+}
+
+.main-title {
+      margin-top: 0; /* Removes any default extra space at the top of the text */
+    font-family: serif;
+    font-size: 45px;
+    color: #b0b4b9
+}
+
+a {
+color: white;
+text-decoration: none;
+margin: 22px;
+}
+
+p {
+color: #f3e6d3;
+}
+
+button {
+background: #050658;
+color: #f3e5d0;
+border: none;
+padding: 10px 20px;
+}
+
+.box {
+background: #f3e6d3;
+height: 90px;
+padding: 0;
+margin-top: auto;
+}
+ .footer {
+    background-color: #1a2533; /* Matches your dark blue theme */
+    color: rgba(255, 255, 255, 0.7); /* Soft white so it's not too bright */
+    padding: 60px 20px;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.footer p {
+    margin: 10px 0;
+}
+
+.footer-logo {
+    font-family: serif;
+    font-size: 24px;
+    color: white;
+    margin-bottom: 20px;
+    display: block;
+}

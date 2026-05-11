@@ -1,0 +1,200 @@
+.navbar{ 
+background: #692020;
+padding: 24px; 
+text-align: left;
+margin:0;
+}
+ .navbar a {
+ float: left;
+    display: block;
+    color: #b0b4b9;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 16px; 
+    margin-right: 20px;
+    line-height: 52px; 
+    height: 52px;
+ }
+ .navbar a:hover{
+Color: #3b1111;
+Background-color : rgb(116, 42, 42);
+}
+
+
+ body {
+margin: 0;
+font-family: Arial, sans-serif;
+background: rgb(37, 52, 79);
+overflow-x: hidden;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+}
+
+
+.short-line {
+    width: 50px;
+    border: 1px solid #b0b4b9;
+    margin-left: 0;
+}
+
+
+
+
+.team-buttons {
+    display: flex;
+    flex-wrap: wrap;   /* Allows names to wrap to the next line if they are long */
+    gap: 15px;
+    margin-top: 30px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #3b1111; /* Deep maroon/dark red */
+    color: white;
+}
+
+.contact-section {
+   display: flex;
+    height: 100vh;
+    background-color: #3b1111;
+}
+.contact-content-wrapper {
+   flex: 2;
+    display: flex;
+    gap: 40px;
+    padding: 60px;
+    
+    /* CHANGE THIS: from 'center' to 'flex-start' */
+    align-items: flex-start; 
+    
+    /* Control the top gap here */
+    padding-top: 100px;
+}
+.contact-text-side {
+    flex: 1;
+}
+
+.contact-form-side {
+    flex: 1.2;
+}
+
+.contact-left {
+   flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Keeps content at the top */
+    
+    /* Decrease this number to move it UP. Try 40px or 20px. */
+    padding-top: 30px; 
+    
+    /* Also ensure the title itself doesn't have a top margin pushing it down */
+}
+
+.contact-title {
+    margin-top: 0; /* Removes any default extra space at the top of the text */
+    font-family: serif;
+    font-size: 45px;
+    color: white;
+}
+.contact-details {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center; /* Keeps icon and text centered together */
+    gap: 15px;           /* Space between icon and text */
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+}
+
+.detail-item i {
+    color: #d4a373;      /* Matches your button color! */
+    font-size: 18px;     /* Makes icons slightly larger than text */
+    width: 25px;         /* Keeps all icons perfectly lined up */
+    text-align: center;
+}
+/* Form Styling */
+.contact-form {
+   width: 100%;
+    max-width: 450px; /* Limits how wide the boxes get so they don't look stretched */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.2);
+    padding: 12px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.send-btn {
+   /* Box Shape & Size */
+    width: 100%;             /* Makes it match the width of the input fields */
+    padding: 15px;           /* Adds height to the button */
+    border: none;            /* Removes the default button border */
+    display: block;          /* Makes it sit as its own box */
+    margin-top: 20px;
+
+    /* Colors - Change these to your favorite! */
+    background-color: #d4a373; /* This is the "Sand/Gold" color from your photo */
+    color: #3b1111;           /* Dark text color so it's easy to read */
+
+    /* Style & Hover */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;     /* Makes it look more editorial */
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth color change */
+}
+
+.send-btn:hover {
+    background-color: white;
+}
+
+/* Right Side Image */
+.contact-right {
+   flex: 1;               /* Takes up exactly the other 50% */
+    height: 100%;
+}
+
+.contact-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+ .footer {
+    background-color: #3b1111; /* Matches your dark blue theme */
+    color: rgba(255, 255, 255, 0.7); /* Soft white so it's not too bright */
+    padding: 60px 20px;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.footer p {
+    margin: 10px 0;
+}
+
+.footer-logo {
+    font-family: serif;
+    font-size: 24px;
+    color: white;
+    margin-bottom: 20px;
+    display: block;
+}

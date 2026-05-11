@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+    
+}
+.navbar{
+    width:100%;
+    height:80px;
+
+    background:rgb(64, 93, 124);
+
+    display:flex;
+    align-items:center;
+
+    padding:0 40px;
+
+    gap:40px;
+}
+
+.navbar a {
+    color: #b0b4b9;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 18px;    /* This creates the space for the "box" */
+    border-radius: 8px;    /* Rounds the corners of the box */
+    transition: 0.3s;      /* Makes the hover look smooth */
+    display: inline-block;
+}
+
+/* This creates the "box" when you put the mouse over the link */
+.navbar a:hover {
+    background-color: rgb(69, 112, 158); /* The box color */
+    color: rgb(40, 66, 94);          /* Changes text color on hover */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Adds a slight depth effect */
+}
+
+
+.theme-buttons{
+    display:flex;
+    gap:12px;
+}
+
+.theme-btn{
+    padding:10px 18px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.orange-btn{
+    background:#a19487;
+    color:white;
+}
+
+.dark-btn{
+    background:#222;
+    color:white;
+}
+
+.magazine-name {
+    margin-left: auto;       /* This pushes the text to the top right */
+    font-family: 'serif';    /* Magazines often use serif fonts like Times New Roman */
+    font-weight: bold;
+    font-size: 20px;
+    color: #b0b4b9;          /* Matching your link color from {9E764559-D8C3-4271-B4FE-E16ABDCDFB40}.jpg */
+    text-transform: uppercase;
+    letter-spacing: 2px;     /* Gives it a cleaner, high-end look */
+}
+.hero {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    height: calc(100vh - 80px);
+    position: relative;
+}
+
+/* Left Panel */
+.hero-left {
+    background-color: var(--tan);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10%;
+    position: relative;
+}
+
+.main-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 4.5rem;
+    line-height: 1.1;
+    margin-bottom: 2rem;
+}
+
+.main-title span {
+    font-family: 'Prata', serif;
+    font-weight: 400;
+}
+
+.description {
+    max-width: 300px;
+    line-height: 1.6;
+    margin-bottom: 3rem;
+    font-size: 0.9rem;
+    color: #444;
+}
+
+.cta-btn {
+    display: inline-block;
+    background-color: rgb(78, 52, 35);
+    color: var(--navy);
+    padding: 1rem 2.5rem;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.slider-nav {
+    position: absolute;
+    bottom: 40px;
+    left: 10%;
+    display: flex;
+    gap: 20px;
+    font-size: 0.9rem;
+}
+
+.slider-nav span {
+    color: #504444;
+    cursor: pointer;
+}
+
+.slider-nav span.active {
+    color: var(--navy);
+    border-bottom: 2px solid rgb(78, 52, 35);
+}
+
+/* Right Panel */
+.hero-right {
+    background-color: #8a8a8a; /* Gray background */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.accent-box {
+    position: absolute;
+    left: -100px;
+    top: 15%;
+    width: 300px;
+    height: 70%;
+    background-color: var(--slate);
+    z-index: 1;
+}
+
+.image-container {
+    width: 60%;
+    height: 70%;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(20%);
+}
+
+.info-card {
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+    background-color: var(--navy);
+    color: white;
+    padding: 2.5rem;
+    z-index: 3;
+    min-width: 300px;
+}
+
+.info-card .sub {
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+}
+
+.info-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.info-card .season {
+    font-size: 0.8rem;
+    color: #aaa;
+    letter-spacing: 1px;
+}
+
+/* Responsive adjustment */
+@media (max-width: 1024px) {
+    .main-title { font-size: 3rem; }
+    .hero { grid-template-columns: 1fr; height: auto; }
+    .hero-left { padding: 100px 5%; }
+    .accent-box { display: none; }
+    .info-card { position: relative; bottom: 0; width: 100%; }
+}
+
+.footer {
+    background-color: rgb(213, 184, 147); /* Matches your dark blue theme */
+    color: rgba(255, 255, 255, 0.7); /* Soft white so it's not too bright */
+    padding: 60px 20px;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.footer p {
+    margin: 10px 0;
+}
+
+.footer-logo {
+    font-family: serif;
+    font-size: 24px;
+    color: white;
+    margin-bottom: 20px;
+    display: block;
+}
